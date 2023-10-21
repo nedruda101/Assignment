@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    .carousel-item {
+        height: 39rem;
+        background-color: black;
+        color: white;
+        position: relative;
+        overflow: hidden;
+        /* Add this line to hide overflow content */
+    }
+
+    .carousel-item img {
+        object-fit: cover;
+        width: 100%;
+        /* Change 'height' to 'width' */
+        height: 100%;
+        opacity: 0.7;
+    }
+</style>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Fourth navbar example">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" style="font-size: 16px;">The Legendary Sannin</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample04">
+                    <ul class="navbar-nav mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="aboutus.html">ABOUT US</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown"
+                                aria-expanded="false">FEATURES</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown04">
+                                <li><a class="dropdown-item" href="calculator.html">CALCULATOR</a></li>
+                                <li><a class="dropdown-item" href="php/file.php">FILE MANAGER</a></li>
+                                <li><a class="dropdown-item" href="form.html">FORM VALIDATION</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <!-- Apply ms-auto to this ul for the LOGOUT item -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">LOGOUT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/jiraiya.png" class="d-block w-100" alt="...">
+
+                    <div class="container">
+                        <div class="carousel-caption text-start">
+                            <h1>The Legends of the Sannin Unveiled</h1>
+                            <p>Toad Sage's Tale Begins Here</p>
+                            <p><a class="btn btn-lg btn-primary" href="php/file.php">FILE MANAGER</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/orochimaru.png" class="d-block w-100" alt="...">
+
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>The Legends of the Sannin Unveiled</h1>
+                            <p>Unraveling a Dark Enigma</p>
+                            <p><a class="btn btn-lg btn-primary" href="calculator.html">CALCULATOR</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/tsunade.png" class="d-block w-100" alt="...">
+
+                    <div class="container">
+                        <div class="carousel-caption text-end">
+                            <h1>The Legends of the Sannin Unveiled</h1>
+                            <p>Strength in Medical Expertise</p>
+                            <p><a class="btn btn-lg btn-primary" href="#">FORM VALIDATION</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+
+        <h1 class="fw-light" style="text-align: center;">Our Executives</h1>
+        <p style="text-align: center; padding-left: 450px;padding-right: 450px;">Jireyya, Shanenade, and Orochijohn, collectively known as the Legendary Sannin, are
+            a trio of highly skilled ninja, each with their unique abilities, wisdom, and significant impact on the
+            ninja world.</p>
+
+
+
+        <div class="container marketing" style="text-align: center; margin-top: 10px;">
+            <div class="row">
+                <div class="col-lg-4 shadow" style="padding-top:40px ;">
+                    <img class="bd-placeholder-img rounded-circle" src="assets/shane.jpeg" width="140" height="140"
+                        alt="Shane Mojica">
+                    <h2>Shanenade</h2>
+                    <p>Renowned for her unparalleled medical prowess, Tsunade was a Hokage who led with strength,
+                        wisdom, and a commitment to her village.</p>
+                    <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                </div>
+
+                <div class="col-lg-4 shadow" style="padding-top:40px ;">
+                    <img class="bd-placeholder-img rounded-circle" src="assets/rey.jpeg" width="140" height="140"
+                        alt="Rey Laurence Nedruda">
+
+                    <h2>Jireyya</h2>
+                    <p>Legendary ninja and master of toad arts, Jiraiya was a brilliant strategist and a source of
+                        inspiration for many in the ninja world.</p>
+                    <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4 shadow" style="padding-top:40px ;">
+                    <img class="bd-placeholder-img rounded-circle" src="assets/john.jpeg" width="140" height="140"
+                        alt="John Lloyd Nalugon">
+
+                    <h2>Orochijohn</h2>
+                    <p>Scheming and enigmatic, Orochimaru was a master of forbidden jutsu, elusive figure and an
+                        ever-present shadow in
+                        the ninja world.</p>
+                    <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+        </div>
+    </main>
+    <script src="assets/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

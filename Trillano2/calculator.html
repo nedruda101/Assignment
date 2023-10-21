@@ -1,0 +1,173 @@
+
+
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Cover Template · Bootstrap v5.0</title>
+   
+
+
+
+
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <style>
+        body {
+        margin: 0;
+        padding: 0;
+        background: url('assets/pattern.webp');
+        background-size: 200px;
+    }
+        .calculator {
+            max-width: 293px;
+            margin: 0 auto;
+            background-color: #f2f2f2;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+    
+        .calculator input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 24px;
+            text-align: right;
+            border: none;
+        }
+    
+        .calculator button {
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            margin: 5px;
+            background-color: #e4e4e4;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    
+        .calculator button:hover {
+            background-color: #d4d4d4;
+        }
+    
+        .calculator #result {
+            font-size: 28px;
+            margin-top: 10px;
+            margin-right: 20px;
+        }
+    </style>
+    
+
+
+
+   
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Fourth navbar example">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#" style="font-size: 16px;">The Legendary Sannin</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample04">
+                    <ul class="navbar-nav mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutus.html">ABOUT US</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="dropdown04" data-bs-toggle="dropdown"
+                                aria-expanded="false">FEATURES</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown04">
+                                <li><a class="dropdown-item" href="calculator.html">CALCULATOR</a></li>
+                                <li><a class="dropdown-item" href="php/file.php">FILE MANAGER</a></li>
+                                <li><a class="dropdown-item" href="form.html">FORM VALIDATION</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <!-- Apply ms-auto to this ul for the LOGOUT item -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">LOGOUT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <h1 class="fw-light" style="text-align: center; font-size:60px;">Calculator</h1>
+    <main style="margin-top: 60px;">
+            <div class="calculator">
+                <input type="text" id="display" readonly>
+                <div>
+                    <button onclick="appendToDisplay('7')">7</button>
+                    <button onclick="appendToDisplay('8')">8</button>
+                    <button onclick="appendToDisplay('9')">9</button>
+                    <button onclick="appendToDisplay('+')">+</button>
+                </div>
+                <div>
+                    <button onclick="appendToDisplay('4')">4</button>
+                    <button onclick="appendToDisplay('5')">5</button>
+                    <button onclick="appendToDisplay('6')">6</button>
+                    <button onclick="appendToDisplay('-')">-</button>
+                </div>
+                <div>
+                    <button onclick="appendToDisplay('1')">1</button>
+                    <button onclick="appendToDisplay('2')">2</button>
+                    <button onclick="appendToDisplay('3')">3</button>
+                    <button onclick="appendToDisplay('*')">*</button>
+                </div>
+                <div>
+                    <button onclick="appendToDisplay('0')">0</button>
+                    <button onclick="appendToDisplay('.')">.</button>
+                    <button onclick="calculate()">=</button>
+                    <button onclick="clearDisplay()">C</button>
+                </div>
+                <div id="result"></div>
+            </div>
+
+        </main> 
+
+
+
+
+    
+    <script>
+        function appendToDisplay(value) {
+            document.getElementById('display').value += value;
+        }
+
+        function calculate() {
+            try {
+                const result = eval(document.getElementById('display').value);
+                document.getElementById('result').textContent = result;
+            } catch (error) {
+                document.getElementById('result').textContent = 'Error';
+            }
+        }
+
+        function clearDisplay() {
+            document.getElementById('display').value = '';
+            document.getElementById('result').textContent = '';
+        }
+    </script>
+    <script src="assets/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
