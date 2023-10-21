@@ -50,13 +50,13 @@ $result = $conn->query($sql);
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.84.0">
     <title>Cover Template · Bootstrap v5.0</title>
-    <link rel="stylesheet" href="../assets/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/custom.css">
+    <link rel="stylesheet" href="assets/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
     <style>
         body {
             padding: 0;
             margin: 0;
-            background-image: url('../assets/pattern.webp');
+            background-image: url('assets/pattern.webp');
             /* Set your background image */
             background-size: 200px;
         }
@@ -96,8 +96,8 @@ $result = $conn->query($sql);
         }
 
         .download-link {
-            background-color: #4CAF50;
-            color: white;
+            background-color: grey;
+            color: black;
             padding: 6px 12px;
             text-decoration: none;
             border-radius: 5px;
@@ -105,33 +105,36 @@ $result = $conn->query($sql);
         }
 
         .download-link:hover {
-            background-color: #45a049;
+            background-color: #D3D3D3;
+            color:black;
         }
 
         .delete-link {
-            background-color: #f44336;
-            color: white;
+            background-color: grey;
+            color: black;
             padding: 6px 12px;
             text-decoration: none;
             border-radius: 5px;
         }
 
         .delete-link:hover {
-            background-color: #d32f2f;
+            background-color: #D3D3D3;
+            color:black;
         }
 
         .page-link {
             display: inline-block;
             padding: 5px 10px;
-            background-color: #007BFF;
-            color: white;
+            background-color: grey;
+            color: black;
             border-radius: 5px;
             text-decoration: none;
             margin-right: 5px;
         }
 
         .page-link:hover {
-            background-color: #0056b3;
+            background-color: #D3D3D3;
+            color:black;
         }
 
         .current-page {
@@ -156,7 +159,7 @@ $result = $conn->query($sql);
 </head>
 
 <body>
-    <header>
+<header>
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Fourth navbar example">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#" style="font-size: 16px;">The Legendary Sannin</a>
@@ -172,17 +175,18 @@ $result = $conn->query($sql);
                             <a class="nav-link" aria-current="page" href="#">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../aboutus.html">ABOUT US</a>
+                            <a class="nav-link " href="aboutus.html">ABOUT US</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle active" href="#" id="dropdown04" data-bs-toggle="dropdown"
-                                aria-expanded="false">FEATURES</a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdown04">
-                                <li><a class="dropdown-item" href="../calculator.html">CALCULATOR</a></li>
-                                <li><a class="dropdown-item" href="../file.ph">FILE MANAGER</a></li>
-                                <li><a class="dropdown-item" href="../form.html">FORM VALIDATION</a></li>
-                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link " href="calculator.html">CALCULATOR</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="file.php">FILE MANAGER</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="form.php">FORM</a>
+                        </li>
+                        
                     </ul>
                     <ul class="navbar-nav ms-auto">
                         <!-- Apply ms-auto to this ul for the LOGOUT item -->
@@ -194,9 +198,10 @@ $result = $conn->query($sql);
             </div>
         </nav>
     </header>
-    <h1 class="fw-light" style="text-align: center; font-size:60px;">File Manager</h1>
-    <div class="container" style="margin-top: 60px;">
-        <form method="post" action="upload.php" enctype="multipart/form-data">
+    
+    <h1 class="fw-light" style="text-align: center; font-size:60px; background-color: rgba(255, 255, 255, 0.4);">File Manager</h1>
+    <div class="container mt-5" style="margin-top: 60px;">
+        <form method="post"  action="upload.php" enctype="multipart/form-data" style="background-color: rgba(255, 255, 255, 0.5);">
             <input type="file" name="file">
             <input type="submit" value="Upload">
         </form>
@@ -209,7 +214,7 @@ if ($totalRows > 0) {
         echo '<tr>';
         echo '<td>' . $row["file_name"] . '</td>';
         echo '<td class="download-delete-cell"><a href="uploads/' . $row["file_name"] . '" download="' . $row["file_name"] . '" class="download-link">Download</a>';
-        echo '<a href="delete.php?id=' . $row["id"] . '" style="color: red;" class="delete-link">Delete</a></td>';
+        echo '<a href="delete.php?id=' . $row["id"] . '" style="color: black;" class="delete-link">Delete</a></td>';
         echo '</tr>';
     }
     echo '</table>';
@@ -220,31 +225,34 @@ if ($totalRows > 0) {
 
         <!-- Pagination links moved to the bottom of the table -->
         <div class="pagination">
-            <?php
-    if ($currentPage > 1) {
-        $prevPage = $currentPage - 1;
-        echo '<a href="?page=' . $prevPage . '" class="page-link">Previous</a> ';
-    }
-    
-    for ($i = 1; $i <= $totalPages; $i++) {
-        if ($i == $currentPage) {
-            echo '<span class="current-page">' . $i . '</span> ';
+        <?php
+        if ($currentPage > 1) {
+            $prevPage = $currentPage - 1;
+            echo '<a href="?page=' . $prevPage . '" class="page-link">Previous</a> ';
         } else {
-            echo '<a href="?page=' . $i . '" class="page-link">' . $i . '</a> ';
+            // If it's the first page, you can still display the "Previous" link but make it disabled.
+            echo '<a class="page-link disabled">Previous</a> ';
         }
-    }
-    
-    if ($currentPage < $totalPages) {
-        $nextPage = $currentPage + 1;
-        echo '<a href="?page=' . $nextPage . '" class="page-link">Next</a>';
-    } else {
-        // If there's no next page, you can still display the "Next" link but make it disabled.
-        echo '<a href="#" class="page-link" disabled>Next</a>';
-    }
-    ?>
-        </div>
+
+        for ($i = 1; $i <= $totalPages; $i++) {
+            if ($i == $currentPage) {
+                echo '<span class="current-page">' . $i . '</span> ';
+            } else {
+                echo '<a href="?page=' . $i . '" class="page-link">' . $i . '</a> ';
+            }
+        }
+
+        if ($currentPage < $totalPages) {
+            $nextPage = $currentPage + 1;
+            echo '<a href="?page=' . $nextPage . '" class="page-link">Next</a>';
+        } else {
+            // If it's the last page, you can still display the "Next" link but make it disabled.
+            echo '<a class="page-link disabled">Next</a>';
+        }
+        ?>
     </div>
-    <script src="../assets/bootstrap.bundle.min.js"></script>
+    </div>
+    <script src="assets/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
