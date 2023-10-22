@@ -18,21 +18,44 @@
       .gege{
         width: 100%;
         margin: 0 auto;
-        height:758px;
+        height: 758px;
         padding-top: 10px;
        
       }
       #rey{
     font-family: 'KaushanScript';
 }
+#imageContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 999;
+    }
+
+    #imageContainer img {
+      width: 100%; 
+      height: auto; 
+    }
+
+  
+    #imageContainer.hidden {
+      display: none;
+    }
+
     </style>
 </head>
 
 <body>
-<header>
+    <header>
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Fourth navbar example">
             <div class="container-fluid">
-                <a class="navbar-brand" href="home2.html" style="font-size: 16px;"><img src="assets/icon.png" style="width: 30px;">The Legendary Sannin</a>
+                <a class="navbar-brand" href="home.html" style="font-size: 16px;"><img src="assets/icon.png" style="width: 30px;">The Legendary Sannin</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -42,13 +65,13 @@
                 <div class="collapse navbar-collapse" id="navbarsExample04">
                     <ul class="navbar-nav mb-2 mb-md-0">
                         <li class="nav-item">
-                            <a class="nav-link " aria-current="page" href="home.html">HOME</a>
+                            <a class="nav-link active" aria-current="page" href="home.html">HOME</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="aboutus.html">ABOUT US</a>
                         </li>
                         <li class="nav-item dropdown"> 
-                            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 FEATURES
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -59,14 +82,14 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="seait.php">SEAIT</a>
+                            <a class="nav-link " href="seait.php">SEAIT</a>
                         </li>
                         <li class="nav-item dropdown"> 
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 RESUMES
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="namikaze.html">Jireyya Namikaze</a></li>
+                                <li><a class="dropdown-item" href="namikaze.html">Jireyya Namikaze</a></li>
                                 <li><a class="dropdown-item" href="senju.html">Shanenade Senju</a></li>
                                 <li><a class="dropdown-item" href="yakushi.html">Orochijohn Yakushi</a></li>
                             </ul>
@@ -74,7 +97,7 @@
                         
                     </ul>
                     <ul class="navbar-nav ms-auto">
-                        <!-- Apply ms-auto to this ul for the LOGOUT item -->
+            
                         <li class="nav-item">
                             <a class="nav-link" href="#">LOGOUT</a>
                         </li>
@@ -84,14 +107,31 @@
         </nav>
     </header>
     <div class="gege" style="background-color: rgba(255, 255, 255, 0.9); box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
-  
-    <h1 class="display-4 fw-bold text-center" id="rey">Sout East Asian Institute</h1>
-    <p class="lead text-left" style=" padding-left:100px; padding-right:100px;">
-          <?php readfile("assets/aboutseait.txt");?></p>
-    
+    <h1 class="display-4 fw-bold text-center" id="rey">The Legendary Sannin</h1>
+    <p class="lead text-center" style="padding-left: 300px; padding-right:300px;">The Legendary Sannin, iconic figures
+        in the Naruto universe, are a trio of exceptionally skilled ninja known for their legendary feats and unique
+        abilities.</p>
+    <div class="overflow-hidden" style="max-height: 55vh;">
+        <div class="container" style="text-align: center;">
+            <img src="assets/san.png" class="img-fluid border rounded-3 shadow-lg" alt="Example image" width="700">
+        </div>
+    </div>
 </div>
+<div id="imageContainer" class="hidden">
+    <img src="assets/shesh1.gif" alt="Image">
+  </div>
+  <script>
+  
+    window.addEventListener('load', () => {
+      const imageContainer = document.getElementById('imageContainer');
+      imageContainer.classList.remove('hidden');
 
-
+    
+      setTimeout(() => {
+        imageContainer.classList.add('hidden');
+      }, 1000);
+    });
+  </script>
 <script src="assets/bootstrap.bundle.min.js"></script>
 
 </body>

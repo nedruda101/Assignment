@@ -1,11 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="assets/icon.png" type="image/x-icon">
-    <title>Legendary Sannin</title>
+    <title>Jiraiya Namikaze - Ninja Profile</title>
+
     <link rel="stylesheet" href="assets/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom.css">
     <style>
@@ -15,18 +13,48 @@
             background: url('assets/pattern.webp');
             background-size: 200px;
         }
-      .gege{
-        width: 100%;
+
+        .contact {
+            font-weight: bold;
+        }
+
+        .objective {
+            margin-top: 20px;
+        }
+
+        .experience {
+            margin-top: 20px;
+        }
+
+        .skills {
+            margin-top: 20px;
+        }
+
+        .education {
+            margin-top: 20px;
+        }
+
+        .certifications {
+            margin-top: 20px;
+        }
+
+        .profile-image {
+            float: right;
+            margin-left: 20px;
+            max-width: 300px;
+            max-height: 300px;
+        }
+        .gege{
+            width: 100%;
         margin: 0 auto;
-        height: 758px;
+        height: auto;
         padding-top: 10px;
+        padding-bottom: 20px;
        
       }
       #rey{
     font-family: 'KaushanScript';
 }
-
-
     </style>
 </head>
 
@@ -44,7 +72,7 @@
                 <div class="collapse navbar-collapse" id="navbarsExample04">
                     <ul class="navbar-nav mb-2 mb-md-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="home.html">HOME</a>
+                            <a class="nav-link " aria-current="page" href="home.html">HOME</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="aboutus.html">ABOUT US</a>
@@ -64,7 +92,7 @@
                             <a class="nav-link " href="seait.php">SEAIT</a>
                         </li>
                         <li class="nav-item dropdown"> 
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 RESUMES
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -76,7 +104,7 @@
                         
                     </ul>
                     <ul class="navbar-nav ms-auto">
-            
+                        <!-- Apply ms-auto to this ul for the LOGOUT item -->
                         <li class="nav-item">
                             <a class="nav-link" href="#">LOGOUT</a>
                         </li>
@@ -86,20 +114,65 @@
         </nav>
     </header>
     <div class="gege" style="background-color: rgba(255, 255, 255, 0.9); box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
-    <h1 class="display-4 fw-bold text-center" id="rey">The Legendary Sannin</h1>
-    <p class="lead text-center" style="padding-left: 300px; padding-right:300px;">The Legendary Sannin, iconic figures
-        in the Naruto universe, are a trio of exceptionally skilled ninja known for their legendary feats and unique
-        abilities.</p>
-    <div class="overflow-hidden" style="max-height: 55vh;">
-        <div class="container" style="text-align: center;">
-            <img src="assets/san.png" class="img-fluid border rounded-3 shadow-lg" alt="Example image" width="700">
+   
+    <div class="container">
+        <img src="assets/profile1.webp" alt="Profile Image" class="profile-image">
+        <h1 class="mt-5" id="rey">Jireyya Namikaze</h1>
+        <p class="mt-3">Hidden Leaf Village, Fire Country</p>
+        <p class="contact mt-3">Phone: (555) 123-4567</p>
+        <p class="contact">Email: <a href="mailto:pervysage@email.com">pervysage@email.com</a></p>
+        <p class="contact">LinkedIn: <a href="https://www.linkedin.com/in/jiraiya-namikaze"
+                target="_blank">www.linkedin.com/in/jiraiya-namikaze</a></p>
+
+        <div class="objective mt-4">
+            <h2>Objective:</h2>
+            <p>Highly skilled ninja with extensive experience in espionage, reconnaissance, and sage jutsu. Seeking opportunities
+                to mentor and train the next generation of ninja while pursuing research in toad summoning techniques.</p>
         </div>
+
+        <div class="experience mt-4">
+            <h2>Professional Experience:</h2>
+            <p><strong>Legendary Ninja | Independent Contractor | Ongoing</strong></p>
+            <ul>
+                <li>Traveled the ninja world, collecting valuable intelligence and writing the "Icha Icha" series of novels.</li>
+                <li>Served as a mentor to Naruto Uzumaki, teaching him the Rasengan technique and the ways of the sage.</li>
+                <li>Conducted extensive research on toad summoning techniques and developed new jutsu.</li>
+            </ul>
+        </div>
+
+        <div class="skills mt-4">
+            <h2>Skills:</h2>
+            <ul>
+                <li>Sage Mode</li>
+                <li>Toad Summoning Jutsu</li>
+                <li>Expert in Espionage and Reconnaissance</li>
+                <li>Skilled Novelist</li>
+            </ul>
+        </div>
+
+        <div class="education mt-4">
+            <h2>Education:</h2>
+            <p>Trained by the Third Hokage, Hiruzen Sarutobi (Clan: Sarutobi)</p>
+        </div>
+
+        <div class="certifications mt-4">
+            <h2>Certifications:</h2>
+            <ul>
+                <li>Sage Mode Mastery</li>
+                <li>Toad Summoning Master</li>
+            </ul>
+        </div>
+
+        <p><strong>References:</strong></p>
+        <ul>
+            <li>Sensei: Hiruzen Sarutobi, Third Hokage</li>
+            <li>Clan: Sarutobi Clan</li>
+        </ul>
+
     </div>
+
 </div>
-
-  
-<script src="assets/bootstrap.bundle.min.js"></script>
-
+    <script src="assets/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

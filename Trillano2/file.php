@@ -49,7 +49,8 @@ $result = $conn->query($sql);
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.84.0">
-    <title>Cover Template · Bootstrap v5.0</title>
+    <link rel="icon" href="assets/icon.png" type="image/x-icon">
+    <title>Legendary Sannin</title>
     <link rel="stylesheet" href="assets/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom.css">
     <style>
@@ -162,6 +163,9 @@ $result = $conn->query($sql);
         padding-top: 10px;
        
       }
+      #rey{
+    font-family: 'KaushanScript';
+}
     </style>
 </head>
 
@@ -169,7 +173,7 @@ $result = $conn->query($sql);
 <header>
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Fourth navbar example">
             <div class="container-fluid">
-                <a class="navbar-brand" href="home.html" style="font-size: 16px;">The Legendary Sannin</a>
+                <a class="navbar-brand" href="home2.html" style="font-size: 16px;"><img src="assets/icon.png" style="width: 30px;">The Legendary Sannin</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -179,23 +183,36 @@ $result = $conn->query($sql);
                 <div class="collapse navbar-collapse" id="navbarsExample04">
                     <ul class="navbar-nav mb-2 mb-md-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="home.html">HOME</a>
+                            <a class="nav-link " aria-current="page" href="home.html">HOME</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="aboutus.html">ABOUT US</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="calculator.html">CALCULATOR</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="file.php">FILE MANAGER</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="form.php">FORM</a>
+                        <li class="nav-item dropdown"> 
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                FEATURES
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="form.php">FORM</a></li>
+                                <li><a class="dropdown-item" href="calculator.html">CALCULATOR</a></li>
+                                <li><a class="dropdown-item" href="file.php">FILE MANAGER</a></li>
+                                <li><a class="dropdown-item" href="schedule.php">SCHEDULING CALCULATOR</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="seait.php">SEAIT</a>
                         </li>
+                        <li class="nav-item dropdown"> 
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                RESUMES
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="namikaze.html">Jireyya Namikaze</a></li>
+                                <li><a class="dropdown-item" href="senju.html">Shanenade Senju</a></li>
+                                <li><a class="dropdown-item" href="yakushi.html">Orochijohn Yakushi</a></li>
+                            </ul>
+                        </li>
+                        
                     </ul>
                     <ul class="navbar-nav ms-auto">
                         <!-- Apply ms-auto to this ul for the LOGOUT item -->
@@ -208,7 +225,7 @@ $result = $conn->query($sql);
         </nav>
     </header>
     <div class="gege" style="background-color: rgba(255, 255, 255, 0.9); box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
-    <h1 class="fw-light" style="text-align: center; font-size:60px;">File Manager</h1>
+    <h1 class="display-4 fw-bold text-center" id="rey">File Manager</h1>
     <div class="container mt-5" style="margin-top: 60px;">
         <form method="post"  action="upload.php" enctype="multipart/form-data">
             <input type="file" name="file">

@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom.css">
-    <title>Document</title>
+    <title>Legendary Sannin</title>
 </head>
 <style>
     body {
@@ -32,13 +33,16 @@
         height: 100%;
         opacity: 0.7;
     }
+    #rey{
+    font-family: 'KaushanScript';
+}
 </style>
 
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Fourth navbar example">
             <div class="container-fluid">
-                <a class="navbar-brand" href="home.html" style="font-size: 16px;">The Legendary Sannin</a>
+                <a class="navbar-brand" href="home2.html" style="font-size: 16px;"><img src="assets/icon.png" style="width: 30px;">The Legendary Sannin</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -48,33 +52,36 @@
                 <div class="collapse navbar-collapse" id="navbarsExample04">
                     <ul class="navbar-nav mb-2 mb-md-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="home.html">HOME</a>
+                            <a class="nav-link " aria-current="page" href="home.html">HOME</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="aboutus.html">ABOUT US</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="calculator.html">CALCULATOR</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="file.php">FILE MANAGER</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="form.php">FORM</a>
+                        <li class="nav-item dropdown"> 
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                FEATURES
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="form.php">FORM</a></li>
+                                <li><a class="dropdown-item" href="calculator.html">CALCULATOR</a></li>
+                                <li><a class="dropdown-item" href="file.php">FILE MANAGER</a></li>
+                                <li><a class="dropdown-item" href="schedule.php">SCHEDULING CALCULATOR</a></li>
+                            </ul>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="seait.php">SEAIT</a>
                         </li>
-                        <li class="nav-item dropdown"> <!-- Add dropdown class to this li -->
+                        <li class="nav-item dropdown"> 
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                SCHEDULER
+                                RESUMES
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="schedule.php">FCFS</a></li>
-                                <li><a class="dropdown-item" href="#">Item 2</a></li>
-                                <li><a class="dropdown-item" href="#">Item 3</a></li>
+                                <li><a class="dropdown-item" href="namikaze.html">Jireyya Namikaze</a></li>
+                                <li><a class="dropdown-item" href="senju.html">Shanenade Senju</a></li>
+                                <li><a class="dropdown-item" href="yakushi.html">Orochijohn Yakushi</a></li>
                             </ul>
                         </li>
+                        
                     </ul>
                     <ul class="navbar-nav ms-auto">
                         <!-- Apply ms-auto to this ul for the LOGOUT item -->
@@ -154,30 +161,30 @@
                 <div class="col-lg-4 shadow" style="padding-top:40px ;">
                     <img class="bd-placeholder-img rounded-circle" src="assets/shane.jpeg" width="140" height="140"
                         alt="Shane Mojica">
-                    <h2>Shanenade</h2>
+                    <h2 id="rey">Shanenade</h2>
                     <p>Renowned for her unparalleled medical prowess, Tsunade was a Hokage who led with strength,
                         wisdom, and a commitment to her village.</p>
-                    <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                    <p><a class="btn btn-secondary" href="senju.html">View details &raquo;</a></p>
                 </div>
 
                 <div class="col-lg-4 shadow" style="padding-top:40px ;">
                     <img class="bd-placeholder-img rounded-circle" src="assets/rey.jpeg" width="140" height="140"
                         alt="Rey Laurence Nedruda">
 
-                    <h2>Jireyya</h2>
+                    <h2 id="rey">Jireyya</h2>
                     <p>Legendary ninja and master of toad arts, Jiraiya was a brilliant strategist and a source of
                         inspiration for many in the ninja world.</p>
-                    <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                    <p><a class="btn btn-secondary" href="namikaze.html">View details &raquo;</a></p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4 shadow" style="padding-top:40px ;">
                     <img class="bd-placeholder-img rounded-circle" src="assets/john.jpeg" width="140" height="140"
                         alt="John Lloyd Nalugon">
 
-                    <h2>Orochijohn</h2>
+                    <h2 id="rey">Orochijohn</h2>
                     <p>Scheming and enigmatic, Orochimaru was a master of forbidden jutsu, elusive figure and an
                         ever-present shadow in
                         the ninja world.</p>
-                    <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+                    <p><a class="btn btn-secondary" href="yakushi.html">View details &raquo;</a></p>
                 </div><!-- /.col-lg-4 -->
             </div><!-- /.row -->
         </div>

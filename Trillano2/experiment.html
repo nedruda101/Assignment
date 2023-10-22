@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="imageContainer" class="hidden">
+    <img src="assets/icon.png" alt="Image">
+  </div>
+
+  <script>
+    // Check if a cookie named "visited" exists
+    const hasVisited = document.cookie.split(';').some((item) => item.trim().startsWith('visited='));
+
+    // If the "visited" cookie doesn't exist, show the image and set the cookie
+    if (!hasVisited) {
+      const imageContainer = document.getElementById('imageContainer');
+      imageContainer.style.display = 'block';
+
+      // Set a "visited" cookie that expires in 2 minutes
+      const now = new Date();
+      now.setTime(now.getTime() + 2 * 60 * 1000);
+      document.cookie = 'visited=true; expires=' + now.toUTCString();
+
+      // Hide the image after 2.5 seconds
+      setTimeout(() => {
+        imageContainer.style.display = 'none';
+      }, 2500);
+    }
+  </script>
+</body>
+</html>
