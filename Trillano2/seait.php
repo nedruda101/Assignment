@@ -17,7 +17,7 @@
       .gege{
         width: 100%;
         margin: 0 auto;
-        height: 758px;
+        height:758px;
         padding-top: 10px;
        
       }
@@ -68,15 +68,11 @@
         </nav>
     </header>
     <div class="gege" style="background-color: rgba(255, 255, 255, 0.9); box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
-    <h1 class="display-4 fw-bold text-center" id="rey">The Legendary Sannin</h1>
-    <p class="lead text-center" style="padding-left: 300px; padding-right:300px;">The Legendary Sannin, iconic figures
-        in the Naruto universe, are a trio of exceptionally skilled ninja known for their legendary feats and unique
-        abilities.</p>
-    <div class="overflow-hidden" style="max-height: 55vh;">
-        <div class="container" style="text-align: center;">
-            <img src="assets/san.png" class="img-fluid border rounded-3 shadow-lg" alt="Example image" width="700">
-        </div>
-    </div>
+  
+    <h1 class="display-4 fw-bold text-center" id="rey">Sout East Asian Institute</h1>
+    <p class="lead text-left" style=" padding-left:100px; padding-right:100px;">
+          <?php readfile("assets/aboutseait.txt");?></p>
+    
 </div>
 
 

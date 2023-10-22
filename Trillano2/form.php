@@ -39,13 +39,20 @@
           background-color: #D3D3D3;
             color:black;
         }
+        .gege{
+        width: 100%;
+        margin: 0 auto;
+        height: auto;
+        padding-top: 10px;
+       
+      }
     </style>
 </head>
 <body>
 <header>
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Fourth navbar example">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#" style="font-size: 16px;">The Legendary Sannin</a>
+                <a class="navbar-brand" href="home.html" style="font-size: 16px;">The Legendary Sannin</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -55,7 +62,7 @@
                 <div class="collapse navbar-collapse" id="navbarsExample04">
                     <ul class="navbar-nav mb-2 mb-md-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">HOME</a>
+                            <a class="nav-link" aria-current="page" href="home.html">HOME</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="aboutus.html">ABOUT US</a>
@@ -138,7 +145,7 @@ function test_input($data) {
     return $data;
 }
 ?>
-
+<div class="gege" style="background-color: rgba(255, 255, 255, 0.9); box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
 <div class="container mt-5">
 <h1 class="fw-light" style="text-align: center; font-size:60px; background-color: rgba(255, 255, 255, 0.4);">Form Validation</h1>
   
@@ -199,6 +206,6 @@ function test_input($data) {
         ?>
     </div>
 </div>
-
+</div>
 </body>
 </html>

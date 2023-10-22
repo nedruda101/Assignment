@@ -155,6 +155,13 @@ $result = $conn->query($sql);
         form {
             text-align: center;
         }
+        .gege{
+            width: 100%;
+        margin: 0 auto;
+        height: 758px;
+        padding-top: 10px;
+       
+      }
     </style>
 </head>
 
@@ -162,7 +169,7 @@ $result = $conn->query($sql);
 <header>
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Fourth navbar example">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#" style="font-size: 16px;">The Legendary Sannin</a>
+                <a class="navbar-brand" href="home.html" style="font-size: 16px;">The Legendary Sannin</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -172,7 +179,7 @@ $result = $conn->query($sql);
                 <div class="collapse navbar-collapse" id="navbarsExample04">
                     <ul class="navbar-nav mb-2 mb-md-0">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">HOME</a>
+                            <a class="nav-link" aria-current="page" href="home.html">HOME</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="aboutus.html">ABOUT US</a>
@@ -198,10 +205,10 @@ $result = $conn->query($sql);
             </div>
         </nav>
     </header>
-    
-    <h1 class="fw-light" style="text-align: center; font-size:60px; background-color: rgba(255, 255, 255, 0.4);">File Manager</h1>
+    <div class="gege" style="background-color: rgba(255, 255, 255, 0.9); box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
+    <h1 class="fw-light" style="text-align: center; font-size:60px;">File Manager</h1>
     <div class="container mt-5" style="margin-top: 60px;">
-        <form method="post"  action="upload.php" enctype="multipart/form-data" style="background-color: rgba(255, 255, 255, 0.5);">
+        <form method="post"  action="upload.php" enctype="multipart/form-data">
             <input type="file" name="file">
             <input type="submit" value="Upload">
         </form>
@@ -250,6 +257,7 @@ if ($totalRows > 0) {
             echo '<a class="page-link disabled">Next</a>';
         }
         ?>
+    </div>
     </div>
     </div>
     <script src="assets/bootstrap.bundle.min.js"></script>
