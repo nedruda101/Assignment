@@ -41,7 +41,7 @@
                 <div class="collapse navbar-collapse" id="navbarsExample04">
                     <ul class="navbar-nav mb-2 mb-md-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="home.html">HOME</a>
+                            <a class="nav-link " aria-current="page" href="home.html">HOME</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="aboutus.html">ABOUT US</a>
@@ -54,6 +54,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="form.php">FORM</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link active" href="seait.php">SEAIT</a>
                         </li>
 
                     </ul>

@@ -76,7 +76,9 @@
                         <li class="nav-item">
                             <a class="nav-link active" href="form.php">FORM</a>
                         </li>
-                        
+                        <li class="nav-item">
+                            <a class="nav-link " href="seait.php">SEAIT</a>
+                        </li>
                     </ul>
                     <ul class="navbar-nav ms-auto">
                         <!-- Apply ms-auto to this ul for the LOGOUT item -->
