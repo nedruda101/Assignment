@@ -10,8 +10,8 @@
         body {
             margin: 0;
             padding: 0;
-            background: url('assets/pattern.webp');
-            background-size: 200px;
+            background: url('assets/bgm1.png');
+            background-size: 30px;
         }
 
         .contact {
@@ -44,17 +44,23 @@
             max-width: 300px;
             max-height: 300px;
         }
-        .gege{
+
+        .gege {
             width: 100%;
-        margin: 0 auto;
-        height: auto;
-        padding-top: 10px;
-        padding-bottom: 20px;
-       
-      }
-      #rey{
-    font-family: 'KaushanScript';
-}
+            margin: 0 auto;
+            height: auto;
+            padding-top: 10px;
+            padding-bottom: 20px;
+
+        }
+
+        #rey {
+            font-family: 'KaushanScript';
+        }
+
+        audio {
+            display: none;
+        }
     </style>
 </head>
 
@@ -62,7 +68,8 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Fourth navbar example">
             <div class="container-fluid">
-                <a class="navbar-brand" href="home2.html" style="font-size: 16px;"><img src="assets/icon.png" style="width: 30px;">The Legendary Sannin</a>
+                <a class="navbar-brand" href="home2.html" style="font-size: 16px;"><img src="assets/icon.png"
+                        style="width: 30px;">The Legendary Sannin</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -77,8 +84,9 @@
                         <li class="nav-item">
                             <a class="nav-link " href="aboutus.html">ABOUT US</a>
                         </li>
-                        <li class="nav-item dropdown"> 
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 FEATURES
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -91,8 +99,9 @@
                         <li class="nav-item">
                             <a class="nav-link " href="seait.php">SEAIT</a>
                         </li>
-                        <li class="nav-item dropdown"> 
-                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 RESUMES
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -101,7 +110,7 @@
                                 <li><a class="dropdown-item" href="yakushi.html">Orochijohn Yakushi</a></li>
                             </ul>
                         </li>
-                        
+
                     </ul>
                     <ul class="navbar-nav ms-auto">
                         <!-- Apply ms-auto to this ul for the LOGOUT item -->
@@ -114,64 +123,81 @@
         </nav>
     </header>
     <div class="gege" style="background-color: rgba(255, 255, 255, 0.9); box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);">
-   
-    <div class="container">
-        <img src="assets/profile1.webp" alt="Profile Image" class="profile-image">
-        <h1 class="mt-5" id="rey">Jireyya Namikaze</h1>
-        <p class="mt-3">Hidden Leaf Village, Fire Country</p>
-        <p class="contact mt-3">Phone: (555) 123-4567</p>
-        <p class="contact">Email: <a href="mailto:pervysage@email.com">pervysage@email.com</a></p>
-        <p class="contact">LinkedIn: <a href="https://www.linkedin.com/in/jiraiya-namikaze"
-                target="_blank">www.linkedin.com/in/jiraiya-namikaze</a></p>
 
-        <div class="objective mt-4">
-            <h2>Objective:</h2>
-            <p>Highly skilled ninja with extensive experience in espionage, reconnaissance, and sage jutsu. Seeking opportunities
-                to mentor and train the next generation of ninja while pursuing research in toad summoning techniques.</p>
-        </div>
+        <div class="container">
+            <img src="assets/profile1.webp" alt="Profile Image" class="profile-image">
+            <h1 class="mt-5" id="rey">Jireyya Namikaze</h1>
+            <p class="mt-3">Hidden Leaf Village, Fire Country</p>
+            <p class="contact mt-3">Phone: (555) 123-4567</p>
+            <p class="contact">Email: <a href="mailto:pervysage@email.com">pervysage@email.com</a></p>
+            <p class="contact">LinkedIn: <a href="https://www.linkedin.com/in/jiraiya-namikaze"
+                    target="_blank">www.linkedin.com/in/jiraiya-namikaze</a></p>
 
-        <div class="experience mt-4">
-            <h2>Professional Experience:</h2>
-            <p><strong>Legendary Ninja | Independent Contractor | Ongoing</strong></p>
+            <div class="objective mt-4">
+                <h2>Objective:</h2>
+                <p style="margin-right:500px;">Highly skilled ninja with extensive experience in espionage, reconnaissance, and sage jutsu. Seeking
+                    opportunities
+                    to mentor and train the next generation of ninja while pursuing research in toad summoning
+                    techniques.</p>
+            </div>
+
+            <div class="experience mt-4">
+                <h2>Professional Experience:</h2>
+                <p><strong>Legendary Ninja | Independent Contractor | Ongoing</strong></p>
+                <ul>
+                    <li>Traveled the ninja world, collecting valuable intelligence and writing the "Icha Icha" series of
+                        novels.</li>
+                    <li>Served as a mentor to Naruto Uzumaki, teaching him the Rasengan technique and the ways of the
+                        sage.</li>
+                    <li>Conducted extensive research on toad summoning techniques and developed new jutsu.</li>
+                </ul>
+            </div>
+
+            <div class="skills mt-4">
+                <h2>Skills:</h2>
+                <ul>
+                    <li>Sage Mode</li>
+                    <li>Toad Summoning Jutsu</li>
+                    <li>Expert in Espionage and Reconnaissance</li>
+                    <li>Skilled Novelist</li>
+                </ul>
+            </div>
+
+            <div class="education mt-4">
+                <h2>Education:</h2>
+                <p>Trained by the Third Hokage, Hiruzen Sarutobi (Clan: Sarutobi)</p>
+            </div>
+
+            <div class="certifications mt-4">
+                <h2>Certifications:</h2>
+                <ul>
+                    <li>Sage Mode Mastery</li>
+                    <li>Toad Summoning Master</li>
+                </ul>
+            </div>
+
+            <p><strong>References:</strong></p>
             <ul>
-                <li>Traveled the ninja world, collecting valuable intelligence and writing the "Icha Icha" series of novels.</li>
-                <li>Served as a mentor to Naruto Uzumaki, teaching him the Rasengan technique and the ways of the sage.</li>
-                <li>Conducted extensive research on toad summoning techniques and developed new jutsu.</li>
+                <li>Sensei: Hiruzen Sarutobi, Third Hokage</li>
+                <li>Clan: Sarutobi Clan</li>
             </ul>
-        </div>
 
-        <div class="skills mt-4">
-            <h2>Skills:</h2>
-            <ul>
-                <li>Sage Mode</li>
-                <li>Toad Summoning Jutsu</li>
-                <li>Expert in Espionage and Reconnaissance</li>
-                <li>Skilled Novelist</li>
-            </ul>
         </div>
-
-        <div class="education mt-4">
-            <h2>Education:</h2>
-            <p>Trained by the Third Hokage, Hiruzen Sarutobi (Clan: Sarutobi)</p>
-        </div>
-
-        <div class="certifications mt-4">
-            <h2>Certifications:</h2>
-            <ul>
-                <li>Sage Mode Mastery</li>
-                <li>Toad Summoning Master</li>
-            </ul>
-        </div>
-
-        <p><strong>References:</strong></p>
-        <ul>
-            <li>Sensei: Hiruzen Sarutobi, Third Hokage</li>
-            <li>Clan: Sarutobi Clan</li>
-        </ul>
 
     </div>
+    <audio controls autoplay loop id="background-audio">
+        <source src="assets/jiraiya.mp3" type="audio/mpeg">
 
-</div>
+    </audio>
+    <script>
+        const audioElement = document.getElementById("background-audio");
+
+
+        audioElement.currentTime = 6;
+
+
+        audioElement.volume = 0.3;
+    </script>
     <script src="assets/bootstrap.bundle.min.js"></script>
 </body>
 

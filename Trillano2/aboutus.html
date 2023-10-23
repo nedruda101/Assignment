@@ -36,6 +36,9 @@
     #rey{
     font-family: 'KaushanScript';
 }
+audio {
+            display: none;
+        }
 </style>
 
 <body>
@@ -189,7 +192,19 @@
             </div><!-- /.row -->
         </div>
     </main>
-
+    <audio controls autoplay loop id="background-audio">
+        <source src="assets/naruto.mp3" type="audio/mpeg">
+        
+    </audio>
+    <script>
+        const audioElement = document.getElementById("background-audio");
+        
+       
+        audioElement.currentTime = 15; 
+        
+        
+        audioElement.volume = 0.3;
+    </script>
 
     <script src="assets/bootstrap.bundle.min.js"></script>
 </body>

@@ -23,8 +23,10 @@
         .gege{
         width: 100%;
         margin: 0 auto;
-        height: 758px;
+        height: auto;
+        max-height:1000px;
         padding-top: 10px;
+        padding-bottom: 167px;
        
       }
       #rey{

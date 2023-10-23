@@ -10,8 +10,8 @@
         body {
             margin: 0;
             padding: 0;
-            background: url('assets/pattern.webp');
-            background-size: 200px;
+            background: url('assets/tsuna.png');
+            background-size: 20px;
         }
 
         .contact {
@@ -53,9 +53,14 @@
             padding-bottom: 20px;
 
         }
-        #rey{
-    font-family: 'KaushanScript';
-}
+
+        #rey {
+            font-family: 'KaushanScript';
+        }
+
+        audio {
+            display: none;
+        }
     </style>
 </head>
 
@@ -63,7 +68,8 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Fourth navbar example">
             <div class="container-fluid">
-                <a class="navbar-brand" href="home2.html" style="font-size: 16px;"><img src="assets/icon.png" style="width: 30px;">The Legendary Sannin</a>
+                <a class="navbar-brand" href="home2.html" style="font-size: 16px;"><img src="assets/icon.png"
+                        style="width: 30px;">The Legendary Sannin</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -78,8 +84,9 @@
                         <li class="nav-item">
                             <a class="nav-link " href="aboutus.html">ABOUT US</a>
                         </li>
-                        <li class="nav-item dropdown"> 
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 FEATURES
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -92,8 +99,9 @@
                         <li class="nav-item">
                             <a class="nav-link " href="seait.php">SEAIT</a>
                         </li>
-                        <li class="nav-item dropdown"> 
-                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
                                 RESUMES
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -102,7 +110,7 @@
                                 <li><a class="dropdown-item" href="yakushi.html">Orochijohn Yakushi</a></li>
                             </ul>
                         </li>
-                        
+
                     </ul>
                     <ul class="navbar-nav ms-auto">
                         <!-- Apply ms-auto to this ul for the LOGOUT item -->
@@ -127,7 +135,7 @@
 
             <div class="objective mt-4">
                 <h2>Objective:</h2>
-                <p>Experienced medical ninja and former Hokage with a passion for healing and protecting the village.
+                <p style="margin-right:500px;">Experienced medical ninja and former Hokage with a passion for healing and protecting the village.
                     Seeking opportunities
                     to continue my work as a medical ninja and contribute to the well-being of the Hidden Leaf Village.
                 </p>
@@ -185,6 +193,19 @@
 
 
     </div>
+    <audio controls autoplay loop id="background-audio">
+        <source src="assets/tsunade.mp3" type="audio/mpeg">
+
+    </audio>
+    <script>
+        const audioElement = document.getElementById("background-audio");
+
+
+        audioElement.currentTime = 1;
+
+
+        audioElement.volume = 0.3;
+    </script>
     <script src="assets/bootstrap.bundle.min.js"></script>
 </body>
 
