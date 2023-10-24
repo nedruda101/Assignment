@@ -1,0 +1,81 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="assets/icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="assets/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/signin.css">
+        <link rel="stylesheet" href="css/custom.css">
+        <title>Legendary Sannin</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                background-image: url('assets/pattern.webp');
+                background-size: 200px;
+            }
+
+            .gege {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                width: 100%;
+                background-color: rgba(255, 255, 255, 0.9);
+
+            }
+
+            .center-image {
+                display: block;
+                margin: 0 auto;
+            }
+
+            #rey {
+                font-family: 'KaushanScript';
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="gege">
+            <div class="container" style="max-width: 900px;">
+                <div class="row justify-content-center mt-5">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                <h1 id="rey">Shinobi Recruitment Form</h1>
+                            </div>
+                            <div class="card-body" style="  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+                                padding: 20px;
+                                border-radius: 10px;">
+                              <form method="post" action="register.php">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Name</label>
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="password" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+                                </div>
+                            
+                                <div class="text-center">
+                                    <button type="submit" name="submit" class="btn btn-primary btn-block"
+                                        style="background-color: rgb(242, 80, 80); border: none; color: white;">Register</button>
+                                </div>
+                            </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    </html>

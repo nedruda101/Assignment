@@ -80,9 +80,9 @@
                         
                     </ul>
                     <ul class="navbar-nav ms-auto">
-                        <!-- Apply ms-auto to this ul for the LOGOUT item -->
+             
                         <li class="nav-item">
-                            <a class="nav-link" href="#">LOGOUT</a>
+                            <a class="nav-link" href="login.html">LOGOUT</a>
                         </li>
                     </ul>
                 </div>

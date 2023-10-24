@@ -12,7 +12,7 @@
         background:url('assets/pattern.webp');
         background-size:200px;
       }
-        /* Custom styles for elevating the form and shortening text inputs */
+
         .elevated-card {
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
             padding: 20px;
@@ -20,9 +20,8 @@
            
         }
 
-        /* Adjusting the width of text inputs */
         .form-control-short {
-            width: 430px; /* Adjust the width as needed */
+            width: 430px; 
         }
         .container{
           width:500px;
@@ -99,7 +98,7 @@
                         
                     </ul>
                     <ul class="navbar-nav ms-auto">
-                        <!-- Apply ms-auto to this ul for the LOGOUT item -->
+       
                         <li class="nav-item">
                             <a class="nav-link" href="#">LOGOUT</a>
                         </li>
@@ -109,13 +108,13 @@
         </nav>
     </header>
 <?php
-// Define variables and set to empty values
+
 $name = $email = $gender = $comment = $website = "";
 $nameErr = $emailErr = $genderErr = $websiteErr = "";
 $isValid = true;
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Validate the name
+
     if (empty($_POST["name"])) {
         $nameErr = "Name is required";
         $isValid = false;
@@ -126,7 +125,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $name = test_input($_POST["name"]);
     }
 
-    // Validate the email
+
     if (empty($_POST["email"])) {
         $emailErr = "E-mail is required";
         $isValid = false;
@@ -137,7 +136,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $email = test_input($_POST["email"]);
     }
 
-    // Validate the website (if present)
+
     if (!empty($_POST["website"])) {
         if (!filter_var($_POST["website"], FILTER_VALIDATE_URL)) {
             $websiteErr = "Invalid URL format";
@@ -147,7 +146,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
-    // Validate the gender
     if (empty($_POST["gender"])) {
         $genderErr = "Gender is required";
         $isValid = false;

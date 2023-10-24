@@ -215,7 +215,7 @@ $result = $conn->query($sql);
                         
                     </ul>
                     <ul class="navbar-nav ms-auto">
-                        <!-- Apply ms-auto to this ul for the LOGOUT item -->
+           
                         <li class="nav-item">
                             <a class="nav-link" href="#">LOGOUT</a>
                         </li>
@@ -249,14 +249,14 @@ if ($totalRows > 0) {
 }
 ?>
 
-        <!-- Pagination links moved to the bottom of the table -->
+
         <div class="pagination">
         <?php
         if ($currentPage > 1) {
             $prevPage = $currentPage - 1;
             echo '<a href="?page=' . $prevPage . '" class="page-link">Previous</a> ';
         } else {
-            // If it's the first page, you can still display the "Previous" link but make it disabled.
+    
             echo '<a class="page-link disabled">Previous</a> ';
         }
 
@@ -272,7 +272,7 @@ if ($totalRows > 0) {
             $nextPage = $currentPage + 1;
             echo '<a href="?page=' . $nextPage . '" class="page-link">Next</a>';
         } else {
-            // If it's the last page, you can still display the "Next" link but make it disabled.
+
             echo '<a class="page-link disabled">Next</a>';
         }
         ?>
